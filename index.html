@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <img src="assests/images/logo-sm-white.png" alt="logo" class="logo">
+        <div class="menu">
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#ideas">Ideas</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="banner" id="ideas">
+        <div class="banner-overlay"></div>
+        <img src="assests/images/banner-b.jpeg" alt="banner-image" class="banner-img">
+        <div id="ideas" class="ideas banner-content">
+            <h1>Ideas</h1>
+            <p>where all our things begin</p>
+        </div>
+    </div>
+    <div class="list-post-container">
+    <div class="list-post">
+        <div class="list-post-header">
+            <div class="list-post-info">
+                <span class="list-post-count">Showing 1-10 of 100</span>
+            </div>
+            <div class="list-post-controls">
+                <label>Show per page:</label>
+                <select id="showPerPage" onchange="updatePosts()">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+                <label>Sort by:</label>
+                <select id="sortBy" onchange="updatePosts()">
+                    <option value="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+            </div>
+        </div>
+    </div>
+        <div class="list-post-content" id="postContent">
+            
+        </div>
+    </div>
+    <div id="pagination" class="pagination"></div>
+    <script src="script.js"></script>
+</body>
+</html>
